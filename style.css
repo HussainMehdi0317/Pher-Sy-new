@@ -1,0 +1,479 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+:root {
+  --pinkcolor: #f7d7c8;
+  --whitecolor: #ffffff;
+}
+
+body {
+  background-color: black;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  cursor: pointer;
+  margin: 20px 0px 50px 0px;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.heading h1 {
+  color: var(--pinkcolor);
+  font-size: 80px;
+}
+
+.image {
+  margin: 40px 0px;
+}
+
+.image img {
+  border-radius: 50%;
+  height: 500px;
+  width: 500px;
+  object-fit: cover;
+}
+
+.text {
+  color: var(--pinkcolor);
+  width: 55vw;
+  line-height: 30px;
+}
+
+.text h2 {
+  margin: 30px;
+  font-weight: 400;
+}
+
+.text p {
+  text-align: justify;
+  font-weight: 300;
+}
+
+.links ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  list-style: none;
+  gap: 50px;
+  margin: 30px;
+}
+
+article {
+  margin: 90px 90px 0px 90px;
+  display: flex;
+  color: var(--pinkcolor);
+  justify-content: space-around;
+  text-align: left;
+  flex-wrap: wrap;
+}
+
+.text-1 {
+  font-size: 25px;
+  width: 35vw;
+}
+
+.text-1 h1 {
+  font-size: 3rem;
+  line-height: 50px;
+}
+
+.text-1 h3 {
+  font-size: 1rem;
+  margin: 30px 0px;
+  word-wrap: break-word;
+
+  color: var(--whitecolor);
+}
+
+.text-2 {
+  width: 35vw;
+}
+
+.text-2 h2 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+.text-2 p {
+  line-height: 30px;
+  color: var(--whitecolor);
+}
+
+.chat {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 25px 38%;
+}
+
+.chat ul li {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.chat ul a {
+  text-decoration: none;
+}
+
+.chat ul span {
+  color: var(--whitecolor);
+  font-weight: 700;
+}
+
+.chat ul span:hover {
+  color: var(--pinkcolor);
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.one {
+  color: var(--pinkcolor);
+  margin: 100px 20% 20px 20%;
+  font-size: xx-large;
+  border-bottom: 1px solid var(--pinkcolor);
+  padding: 40px 210px;
+  text-align: center;
+}
+
+.text-3 {
+  color: var(--pinkcolor);
+  justify-content: center;
+  text-align: center;
+  margin: 20px 20%;
+  font-size: 25px;
+  line-height: 80px;
+}
+
+.arrow {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.arrow h2 {
+  color: var(--pinkcolor);
+  margin: 50px;
+}
+
+.protfolio {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+.protfolio .card-1,
+.protfolio .card-2,
+.protfolio .card-3,
+.protfolio .card-4,
+.protfolio .card-5,
+.protfolio .card-6 {
+  border-radius: 55px;
+  margin: 20px 50px;
+  flex: 1 1 calc(26.3% - 20px);
+  overflow: hidden;
+}
+
+.protfolio img {
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.protfolio img:hover {
+  transform: scale(1.2);
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  margin: 60px;
+}
+
+.button button {
+  padding: 30px 70px;
+  border: 2px solid var(--pinkcolor);
+  background-color: black;
+  color: var(--pinkcolor);
+  font-weight: 700;
+  font-size: 19px;
+}
+
+.button button:hover {
+  background-color: var(--pinkcolor);
+  color: black;
+}
+
+.content {
+  margin: 90px 120px 0px 120px;
+  display: flex;
+  color: var(--pinkcolor);
+  justify-content: space-evenly;
+  text-align: left;
+  gap: 50px;
+}
+
+.text-4 h1 {
+  font-size: 22px;
+  line-height: 32px;
+}
+
+.text-4 p {
+  margin-top: 15px;
+  font-size: 17px;
+  line-height: 26px;
+  color: var(--whitecolor);
+}
+
+.text-5 p {
+  color: var(--whitecolor);
+  font-size: 17px;
+  line-height: 26px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin: 90px 0px;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer h1 {
+  font-size: 40px;
+  color: var(--pinkcolor);
+}
+
+footer ul {
+  color: var(--whitecolor);
+  margin: 20px;
+  font-size: 1.5rem;
+  list-style: none;
+  cursor: pointer;
+}
+
+footer ul:hover {
+  color: var(--pinkcolor);
+}
+
+.img-1 img {
+  margin: 50px;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+footer h2 {
+  color: var(--pinkcolor);
+}
+
+footer p {
+  color: var(--pinkcolor);
+  margin: 34px 40vw 0px 40vw;
+  text-align: center;
+  padding-bottom: 30px;
+  border-bottom: 10px solid var(--pinkcolor);
+}
+
+.last {
+  display: flex;
+  margin: 10px 40vw;
+  justify-content: center;
+}
+
+.last p {
+  text-align: center;
+  color: var(--pinkcolor);
+  margin-bottom: 70px;
+}
+@media (max-width: 300px) {
+  .heading h1 {
+    font-size: 30px;
+  }
+
+  .chat {
+    margin: 25px 20%;
+    justify-content: flex-end;
+  }
+
+  .image img {
+    height: 300px;
+    width: 300px;
+  }
+
+  .text {
+    width: 90vw;
+  }
+
+  .text-1,
+  .text-2 {
+    width: 90vw;
+  }
+
+  .one {
+    padding: 20px 20px;
+  }
+
+  .text-3 {
+    margin: 20px 5%;
+  }
+
+  .protfolio .card-1,
+  .protfolio .card-2,
+  .protfolio .card-3,
+  .protfolio .card-4,
+  .protfolio .card-5,
+  .protfolio .card-6 {
+    flex: 1 1 calc(46% - 10px);
+  }
+
+  .button {
+    margin: 30px;
+  }
+
+  .button button {
+    padding: 20px 30px;
+    font-size: 10px;
+  }
+
+  .content {
+    margin: 20px 5%;
+    flex-direction: column;
+  }
+
+  footer {
+    padding: 20px 10px;
+  }
+}
+@media (max-width: 601px) {
+  .heading h1 {
+    font-size: 60px;
+  }
+
+  .image img {
+    height: 400px;
+    width: 400px;
+  }
+
+  .text {
+    width: 80vw;
+  }
+
+  .text-1,
+  .text-2 {
+    width: 80vw;
+  }
+
+  .text-1 h1 {
+    font-size: 2.5rem;
+  }
+
+  .one {
+    padding: 30px 100px;
+    margin: 0px 20% 20px 20%;
+  }
+
+  .text-3 {
+    margin: 20px 10%;
+    font-size: 20px;
+    line-height: 70px;
+  }
+
+  .protfolio .card-1,
+  .protfolio .card-2,
+  .protfolio .card-3,
+  .protfolio .card-4,
+  .protfolio .card-5,
+  .protfolio .card-6 {
+    flex: 1 1 calc(43% - 20px);
+  }
+
+  .button {
+    margin: 40px;
+  }
+
+  .button button {
+    padding: 25px 50px;
+    font-size: 15px;
+  }
+
+  article {
+    flex-direction: column;
+  }
+
+  .content {
+    margin: 20px 10%;
+    flex-direction: column;
+  }
+
+  footer {
+    padding: 30px 15px;
+    margin: 70px 0px;
+  }
+
+  footer h1 {
+    margin-left: 40px;
+  }
+
+  footer p {
+    margin: 35px 20vw 0px 20vw;
+  }
+
+  .last {
+    margin: 10px 20vw;
+  }
+}
+
+@media (max-width: 777px) {
+  .one h1 {
+    margin: 100px 10% 20px 2%;
+  }
+
+  .one {
+    margin: 50px 20% 20px 20%;
+  }
+
+  article {
+    justify-content: space-between;
+    margin: 90px 70px 0px 70px;
+  }
+
+  .chat {
+    margin: 25px 10%;
+    justify-content: flex-end;
+  }
+}
+
+.image img {
+  height: 300px;
+  width: 300px;
+}
+
+.heading h1 {
+  font-size: 65px;
+}
+
+.text {
+  width: 70vw;
+}
